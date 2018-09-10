@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../../../../../languagetool-core/src/main/resources/org/languagetool/rules/print.xsl" ?>
+<?xml-stylesheet type="text/css" href="../../../../../../../../../languagetool-core/src/main/resources/org/languagetool/rules/rules.css"
+        title="Easy editing stylesheet" ?>
+<!-- Korean Grammar and Typo Rules for LanguageTool See tagset.txt for the 
+	meaning of the POS tags Copyright (C) 2001-2015 Daniel Naber (http://www.danielnaber.de), 
+	Marcin Miłkowski and the LanguageTool contributors Portions of rules are 
+	converted from After The Deadline grammar checker, available at http://open.afterthedeadline.com/, 
+	licensed under GNU GPL. This library is free software; you can redistribute 
+	it and/or modify it under the terms of the GNU Lesser General Public License 
+	as published by the Free Software Foundation; either version 2.1 of the License, 
+	or (at your option) any later version. This library is distributed in the 
+	hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+	warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+	GNU Lesser General Public License for more details. You should have received 
+	a copy of the GNU Lesser General Public License along with this library; 
+	if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth 
+	Floor, Boston, MA 02110-1301 USA -->
+<!DOCTYPE rules [
+    
+<!ENTITY weekdays "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday">
+<!ENTITY abbrevWeekdays "Mon|Mo|Tue|Tu|Wed|We|Thu|Th|Fri|Fr|Sat|Sa|Sun|Su">
+<!ENTITY months "January|February|March|April|May|June|July|August|September|October|November|December">
+<!ENTITY abbrevMonths "Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec">
+]>
+<rules lang="ko"
+	xsi:noNamespaceSchemaLocation="../../../../../../../../../languagetool-core/src/main/resources/org/languagetool/rules/rules.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<category  id="일반문장 1" name="일반문장 1" type="misspelling">
+		<rule id="주목부술" name="주목부술">
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "ETM_Phrase" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Object" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<antipattern>
+				<token postag = "Subject" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Adverb" postag_regexp="yes"></token>
+				<token postag = "Verb" postag_regexp="yes"></token>
+			</antipattern>
+			<pattern>
+				<token min="0" max = "20"></token>
+			</pattern>
+			<message>STK Template이 아닙니다.
+			</message>
+		</rule>
+		<rule id="피동관형절" name="피동관형절">
+			<pattern>
+				<token postag = "Passive_ETM_Phrase_Not_Valid" postag_regexp="yes"></token>
+			</pattern>
+			<message> 피동관형절이 잘못 작성되었습니다. 부사어를 명시해주십시오.
+			</message>
+		</rule>
+		<rule id="관형절" name="관형절">
+			<pattern>
+				<token postag = "ETM_Phrase_Not_Valid" postag_regexp="yes"></token>
+			</pattern>
+			<message> 관형절이 잘못 작성되었습니다. 문장 구성성분을 명확하게 기술해 주십시오.
+			</message>
+		</rule>
+	</category>
+</rules>
